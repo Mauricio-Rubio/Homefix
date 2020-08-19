@@ -1,0 +1,114 @@
+/* variables en css */
+:root{
+    --azulOscuro-color: #083863;
+    --azulMedio-color: #00ACEA;
+    --azulClaro-color: #00EFD1;
+    --crema-color: seashell;
+    --grisBordes-color: #bbb7b7;
+}
+
+
+
+
+html, body{
+    padding: 0%;
+    margin: 0%;
+}
+nav
+{
+    display: flex;    
+    background-color: var(--azulOscuro-color);
+    color: var(--crema-color);
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+nav ul
+{
+    display: flex;
+    text-decoration: none;
+}
+
+nav li{
+    padding-right: 20px;
+    padding-left: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+
+nav li a{
+    color: var(--crema-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--azulClaro-color);
+}
+.main_seccion{ 
+    background-color: var(--crema-color);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: var(--azulMedio-color);
+    /* display: flex; */
+    justify-content: center;
+    padding: 9%;
+    text-align: center ;
+} 
+.productos{
+    background-image: url("../Imagenes\ 1.1/Curva.png");
+    height: 300px;
+    background-size: cover;
+    background-position: center top;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--crema-color);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    text-align:center ;
+}
+.producto .contenido{
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 2px var(--grisBordes-color) ;
+    /* padding: ;< */
+}
+.contenido{
+    background-color: white;
+    margin: 8px;
+    border-radius: 5px;
+}
+.producto
+{
+    /* background-color: seashell; */
+    margin-top: -60px;
+    /* box-shadow: 0 0 2px black ; */
+}
+
+.img_contenido{
+    text-align:center;
+}
+
+.main_boton{
+    background-color: var(--azulMedio-color);
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--crema-color);
+    text-decoration: none;
+    box-shadow: 0 0 10px var(--crema-color) ;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.main_boton:hover{
+    background-color: var(--azulClaro-color);
+}
