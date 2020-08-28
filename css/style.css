@@ -1,13 +1,21 @@
+/* variables en css */
+:root{
+    --azulOscuro-color: #083863;
+    --azulMedio-color: #00ACEA;
+    --azulClaro-color: #00EFD1;
+    --crema-color: seashell;
+    --grisBordes-color: #bbb7b7;
+}
 html, body{
     padding: 0%;
     margin: 0%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 nav
 {
     display: flex;    
     background-color: #083863;
     color: seashell;
-    font-family: 'Josefin Sans', sans-serif;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,12 +60,12 @@ nav li a:hover{
 }
 h1{
     color:#00ACEA;
-    flex-direction: column;
     font-size: 40px;
     margin: 5px;
     padding-left: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 h3{
     color: #083863;
@@ -69,13 +77,11 @@ h3{
     justify-content: space-between;
 }
 .imagen_celular{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 40px;
-    margin-left: 0px;
-    width: 15rem;
-    height: 15rem;
-    padding: 100px 100px 300px 50px;
+    /* margin-right: 40px; */
+    /* margin-left: 0px; */
+    /* width: 15rem; */
+    /* height: 15rem; */
+    padding: 10px;
 }
 .celular{
     margin-right: 20px;
@@ -85,8 +91,9 @@ h3{
 .texto{
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center;
+    /* align-items: center;  */
+    /* justify-content: center; */
+    text-align: center;
 }
 
 .main_seccion{
@@ -94,19 +101,104 @@ h3{
     border: gray 5px solid;
     padding: 10px;
 }
-.productos{
+/* .productos{
     display: flex;
     background-image: url(../Imagenes\ 1.1/Curva.png);
-    height: 1000px;
+    height: 500px;
     background-color: #E3E3E3;
-
-}
-.producto{
+} */
+.productos{
     display: flex;
-    align-items: center;
+    background-color: #E3E3E3;
+    padding: 30px;
+    margin: 0px;
 }
 
 .imagenInferior{
     height: 150px;
     width: 15vw;
+}
+.wrapper {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.tarjetas .tarjeta{
+    /* display: flex; */
+    padding: 10px 10px 10px ;
+    /* margin: 2px */
+    /* border: 1px solid var(--grisBordes-color); */
+    border-radius: 5px;
+    margin: 7px;
+    background-color: white;
+    box-shadow: 0 0 5px var(--crema-color);
+}
+h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    /* padding: 2px; */
+}
+.boton{
+    background-color: var(--azulMedio-color);
+    width: 110px;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--crema-color);
+    box-shadow: 0 0 10px var(--crema-color) ;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px;  
+}
+.boton:hover{
+    background-color: var(--azulClaro-color);
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #545454;
+    height: 60px;
+}
+.wrapper-footer {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+}
+.contacto{
+    background-color: var(--azulMedio-color);
+    margin: 0px;
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 10px;
+}
+.social-link.facebook{
+    background-image: url("../Imagenes\ 1.1/facebook.png");
+    background-size: 50px 50px;
+}
+.social-link.linkedin{
+    background-image: url("../Imagenes\ 1.1/linkedin.png");
+    background-size: 50px 50px;
+}
+.social-link.instagram{
+    background-image: url("../Imagenes\ 1.1/instagram-bosquejado.png");
+    background-size: 50px 50px;
+}
+.social-link.twitter{
+    background-image: url("../Imagenes\ 1.1/twitter.png");
+    background-size: 50px 50px;
 }

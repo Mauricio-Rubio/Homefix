@@ -1,0 +1,18 @@
+@media (max-width: 600px){
+    /* nav{
+        display: in;
+    } */
+    .tarjetas{
+        display: inherit;
+        height: auto;
+    }
+    .tarjeta{
+        margin-top: auto;
+    }
+    .presentacion_seccion{
+        display: inherit;
+        padding: 2%;
+    }
+    
+
+}
