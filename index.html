@@ -3,22 +3,26 @@
 
 <head>
     <link rel="shortcut icon" href="Images/casa.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/animaiones.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeFix</title>
 </head>
 
 <body>
     <!-- inicio navbar -->
-    <nav>
-        <div class="homfix_imagen">
+    <nav class="navbar">
+        <div class="homfix_imagen fadeInDown">
             <img src="Imagenes 1.1/Green Hotel & Lodgings Logo (1).png" alt="" class="logo">
         </div>
-        <div class="nav_opciones">
+        <div class="nav_opciones fadeInDown">
             <ul>
                 <li><a href="#productos">Hogar</a></li>
                 <li><a href="#">Empresas</a></li>
@@ -27,9 +31,20 @@
             </ul>
         </div>
     </nav>
+    <!-- <form action="file:///C:/Users/maurh/Desktop/Homefix/formulario.html">
+            <fieldset class="formulario">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre_usuario">
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido_usuario">
+                <label for="edad">Edad: </label>
+                <input type="text" id="edad" name="edad_usuario">
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form> -->
     <!-- fin navbar -->
     <!-- inicio presentacion -->
-    <section id="presentacion" class="presentacion_seccio">
+    <section id="presentacion" class="presentacion_seccion fadeIn">
         <div class="presentacion_seccion">
             <div class="imagen_celular">
                 <img src="Imagenes xd/Celular.png">
@@ -50,7 +65,7 @@
     </section>
     <!-- fin de la presentacion -->
     <!-- inicio productos -->
-    <div class="productos" id="productos">
+    <div class="productos fadeInUp" id="productos">
         <div class="wrapper">
             <div class="tarjetas">
                 <div class="tarjeta">
@@ -62,57 +77,75 @@
                     </h2>
                 </div>
             </div>
+
             <div class="tarjetas">
                 <div class="tarjeta">
-                    <div class="imagen">
-                        <img src="Imagenes 1.1/electrician-2755682_640.png" alt="" width="290" height="177">
-                    </div>
-                    <h2>
-                        <div class="boton">Electricidad</div>
-                    </h2>
+                    <a href="#presentacion">
+                        <div class="imagen">
+                            <img src="Imagenes 1.1/electrician-2755682_640.png" alt="" width="290" height="177">
+                    </a>
                 </div>
-            </div>
-            <div class="tarjetas">
-                <div class="tarjeta">
-                    <div class="imagen">
-                        <img src="Imagenes 1.1/iron-635619_640.png" alt="" width="290" height="177">
-                    </div>
-                    <h2>
-                        <div class="boton">Lavanderia</div>
-                    </h2>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <div class="tarjeta">
-                    <div class="imagen">
-                        <img src="Imagenes 1.1/building-1080594_640.png" alt="" width="290" height="177">
-                    </div>
-                    <h2>
-                        <div class="boton">Pintura</div>
-                    </h2>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <div class="tarjeta">
-                    <div class="imagen">
-                        <img src="Imagenes 1.1/building-1080594_640.png" alt="" width="290" height="177">
-                    </div>
-                    <h2>
-                        <div class="boton">Construccion</div>
-                    </h2>
-                </div>
-            </div>
-            <div class="tarjetas">
-                <div class="tarjeta">
-                    <div class="imagen">
-                        <img src="Imagenes 1.1/building-1080594_640.png" alt="Plomeria" width="290" height="177">
-                    </div>
-                    <h2>
-                        <div class="boton">Plomeria</div>
-                    </h2>
-                </div>
+                <h2>
+                    <div class="boton">Electricidad</div>
+                </h2>
             </div>
         </div>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <a href="#presentacion">
+                        <div class="imagen">
+                            <img src="Imagenes 1.1/iron-635619_640.png" alt="" width="290" height="177">
+                    </a>
+                </div>
+                <h2>
+                   <a href="#presentacion"><div class="boton">Plomeria</div></a> 
+                </h2>
+            </div>
+        </div>
+        <!-- <div class="tarjetas">
+            <div class="tarjeta">
+                <a href="#presentación"></a>
+                <div class="imagen">
+                    <img src="Imagenes 1.1/iron-635619_640.png" alt="" width="290" height="177">
+                    </a>
+                </div>
+                <h2>
+                    <div class="boton">Lavanderia</div>
+                </h2>
+
+            </div>
+        </div> -->
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="imagen">
+                    <img src="Imagenes 1.1/building-1080594_640.png" alt="" width="290" height="177">
+                </div>
+                <h2>
+                    <div class="boton">Pintura</div>
+                </h2>
+            </div>
+        </div>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="imagen">
+                    <img src="Imagenes 1.1/building-1080594_640.png" alt="" width="290" height="177">
+                </div>
+                <h2>
+                    <div class="boton">Construccion</div>
+                </h2>
+            </div>
+        </div>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="imagen">
+                    <img src="Imagenes 1.1/building-1080594_640.png" alt="Plomeria" width="290" height="177">
+                </div>
+                <h2>
+                    <div class="boton">Plomeria</div>
+                </h2>
+            </div>
+        </div>
+    </div>
     </div>
     <!-- fin productos -->
     <!-- inicio contacto -->
@@ -131,9 +164,11 @@
         <div class="wrapper-footer">
             <div class="social">
                 <a href="https://www.facebook.com/mau.rh.33" target="_blank" class="social-link facebook"></a>
-                <a href="https://www.linkedin.com/in/mauricio-rubio-haro-9940b2167/" target="_blank" class="social-link linkedin"></a>
+                <a href="https://www.linkedin.com/in/mauricio-rubio-haro-9940b2167/" target="_blank"
+                    class="social-link linkedin"></a>
                 <a href="https://twitter.com/Maurici18904461" target="_blank" class="social-link twitter"></a>
-                <a href="https://www.instagram.com/mau.29_rh/?hl=es-la" target="_blank" class="social-link instagram"></a>
+                <a href="https://www.instagram.com/mau.29_rh/?hl=es-la" target="_blank"
+                    class="social-link instagram"></a>
             </div>
         </div>
     </footer>

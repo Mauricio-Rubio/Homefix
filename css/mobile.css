@@ -1,6 +1,9 @@
-@media (max-width: 600px){
+@media (max-width: 700px){
     /* nav{
         display: in;
+    } */
+    /* .navbar{
+        display: inherit;
     } */
     .tarjetas{
         display: inherit;
@@ -11,8 +14,29 @@
     }
     .presentacion_seccion{
         display: inherit;
-        padding: 2%;
+        padding: 4%;
+        margin-bottom: auto;
+        flex-direction: column;
     }
-    
+    .imagen_celular{
+        display: inherit;
+        height: auto;
+        /* padding: auto; */
+    }
+    .texto{
+        display: inherit;
+        margin: 10%;
+    }
+    h3{
+        display: inherit;
+        padding: 5px;
+    }
+    #footer, #contacto{
+        display: inherit;
+    }
+    #productos
+    {
+        margin: 30px;
+    }
 
 }
